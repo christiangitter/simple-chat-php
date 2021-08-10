@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;800&display=swap');
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(233, 233, 233); 
+}
+h2{ 
+    color:black; 
+    margin: 0 0 10px 0; 
+}
+#page-wrap{ 
+    width: 500px; 
+    margin: 30px auto; 
+    position: relative; 
+}
+
+#chat-wrap{
+     border: 1px solid #eee; 
+     margin: 0 0 15px 0; 
+}
+#chat-area{
+    height: 300px; 
+    overflow: auto; 
+    border: 1px solid #666; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 10px;
+}
+#chat-area span{
+    color: white; 
+    background: lightgreen; 
+    padding: 4px 8px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 8px; 
+    margin: 0 5px 0 0; 
+}
+#chat-area p{ 
+    padding: 8px 0; 
+    border-bottom: 1px solid #ccc; 
+}
+
+#nickarea{ 
+    position: absolute; 
+    top: 12px; right: 0; 
+    color: black; 
+    text-align: right; 
+    padding: 4px 10px;
+    background-color: lightgreen;
+    border-radius: 10px 10px 10px 10px;
+}   
+#nickarea span{ 
+    color: black; 
+}
+
+#send-message-area p{ 
+    color: black; 
+    font-size: 14px; 
+    padding-bottom: 3px;
+}
+
+#sendie{ 
+    border: 1px solid #999; 
+    width: 490px; 
+    height: 70px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.sendTextArea {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+}
