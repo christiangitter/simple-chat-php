@@ -31,8 +31,28 @@
             <textarea id="sendie" maxlength = '100' ></textarea>
         </form>
         </div>
+        <br>
+        <div class="close">
+       <input type="button" name="cancelvalue" value="CHAT SCHLIEßEN" onClick="closeDelete()"> 
+        </div>
     </div>
     <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript">
+    function closeDelete() {
+  if (confirm("Möchtest du den Chat wirklich schließen?")) {
+    $.ajax({
+          url: 'delete.php',
+          success: function (response) {
+            close();
+          },
+          error: function () {
+            alert("Chat konnte nicht geschlossen werden");
+          }
+        });
+    
+  }
+}
+</script> 
 </body>
 
 </html>
